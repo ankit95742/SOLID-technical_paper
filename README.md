@@ -1,0 +1,1 @@
+# SOLID-technical_paper
