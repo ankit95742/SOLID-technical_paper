@@ -263,5 +263,31 @@ public interface IPrinter{
         void scan(List<item> items);
 }
 ```
+```
+public interface IFax{
+        void fax(List<item> items);
+}
+public interface IPhotocopy{
+        void photocopy(List<item> items);
+}
 
+public iterface IDuplex{
+        void printDuplex(List<item> items);
+}
+```
+```
+public interface IMachine:IPrinter{
+        IFax,IPhotocopy,Iduplex
+}
+```
 
+---
+
+## dependency inversion principle
+
+**"The Dependency inversion principle state that hight level modules/classes should not depend on low-level modules/classes Both should depend upon abstarction."**
+
+Also,abstraction should not depend upon details. Details should depend upon abstraction.the main motto of the DIP is any higher classes should always depend upon the abstraction of the class rather than the deatail.
+
+The aims to reduce the coupling between the classes is achived by introducing abstraction between the layer, thus doesn't care about the real implementaion.
+   
