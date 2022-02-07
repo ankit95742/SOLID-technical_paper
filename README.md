@@ -67,7 +67,7 @@ public abstact Draw extended Rectange{
 ## Open-close priciple
 
 **"software entities like classes, modules and functions should be open for extension but closed for modification."**
-A cleaver application design and the code writing part should take care of the frequent changes that are done during the development and the maintaning phase of an application.usaually, many changes are involved when a new functionality is added to an application. Those changes is exising code should be minimized, since it's assumed that the exiting code is already unit tested and changes in already written code might affect the existing functionality in an unwanted manner.
+A clever application design and the code writing part should take care of the frequent changes that are done during the development and the maintaning phase of an application.usaually, many changes are involved when a new functionality is added to an application. Those changes is exising code should be minimized, since it's assumed that the exiting code is already unit tested and changes in already written code might affect the existing functionality in an unwanted manner.
 
 The open close priciple states that the design and writing of code should be done in a way that new functionality should be added eith minimum changes in the existing code. The design should be done in a way to allow the adding of new functionality as new classes, keeping as much as possible existing code unchanged.
 
