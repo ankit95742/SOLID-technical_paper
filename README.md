@@ -1,6 +1,6 @@
 # SOLID_technical_paper
 ---
-In this technical paper we are going to learning about how me make our code more readable, clean and easy to add new feature using the **SOLID**.
+In this technical paper we are going to learn about how me make our code more readable, clean and easy to add new feature using the **SOLID**.
 ---
 
 SOLID is acronym that stand for five design principles.
@@ -15,7 +15,7 @@ let's start
 
 ## Single rensponsibility principle
 
-Single rensponsibity principle state that, **"a class shold have one, and only one, reason to change."** 
+> Single rensponsibity principle state that, **"a class should have one, and only one, reason to change."** 
 
 In other why we also say that each class should have one rensponsibility, one single purpose.This mean that a class will do only one job, which leads us to conclude it should have only one reason to change.This principle state that if we have two reasons to change for a class, we have to split the functionality into two classes.Each class will handle only one responsibility and if in the feature we need to make one change we are going to make it in a the class which handle it.
 
@@ -66,7 +66,7 @@ public abstact Draw extended Rectange{
 
 ## Open-close principle
 
-**"software entities like classes, modules and functions should be open for extension but closed for modification."**
+> **"software entities like classes, modules and functions should be open for extension but closed for modification."**
 A clever application design and the code writing part should take care of the frequent changes that are done during the development and the maintaning phase of an application.usaually, many changes are involved when a new functionality is added to an application. Those changes is exising code should be minimized, since it's assumed that the exiting code is already unit tested and changes in already written code might affect the existing functionality in an unwanted manner.
 
 The open close principle states that the design and writing of code should be done in a way that new functionality should be added with minimum changes in the existing code. The design should be done in a way to allow the adding of new functionality as new classes, keeping as much as possible existing code unchanged.
@@ -165,7 +165,7 @@ public double Area(Shape[] shapes)
 ## Liskov substitution principle
 
 The Liskov substitution principle was introduced by Brabara Liskov in her conference keynote "Data Abstraction" in 1987.
-**"let Θ(x) be a property provable about object x of type T. Then Θ(y) should be true for object y of type S where S is a subtype of T.**
+> **"let Θ(x) be a property provable about object x of type T. Then Θ(y) should be true for object y of type S where S is a subtype of T.**
 
 The principle defines that objects of a superclass shall be replaceble with objects of its subclass without breaking the application.
 
@@ -240,7 +240,7 @@ public class Squre extend Shape{
 
 ## Interface segregation principle
 
-**Client should not be forced to depend upon interfaces that they do not use**
+> **Client should not be forced to depend upon interfaces that they do not use**
 
 When we design an application we should take care how we are going to make abstract a module which contains serveral submodules considering the module implemented by a class, we can have an abstraction of the system done in a interface. But if we want to extend our application adding another module that contains only some of the modules of the original system, we are forced to implement the full interface and to write some dummy methods. such an interface is named fat interface or polluted interface. Having the polluted interface is not good solution and might include in appropriate behaviour in the system.
 
@@ -285,9 +285,18 @@ public interface IMachine:IPrinter{
 
 ## dependency inversion principle
 
-**"The Dependency inversion principle state that hight level modules/classes should not depend on low-level modules/classes Both should depend upon abstarction."**
+> **"The Dependency inversion principle state that hight level modules/classes should not depend on low-level modules/classes Both should depend upon abstarction."**
 
 Also,abstraction should not depend upon details. Details should depend upon abstraction.the main motto of the DIP is any higher classes should always depend upon the abstraction of the class rather than the deatail.
 
 The aims to reduce the coupling between the classes is achived by introducing abstraction between the layer, thus doesn't care about the real implementaion.
-   
+ 
+---
+  
+> Reference list:
+
+1. https://www.baeldung.com/java-single-responsibility-principle
+2. https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design
+3. https://www.geeksforgeeks.org/solid-principle-in-programming-understand-with-real-life-examples/
+4. https://howtodoinjava.com/design-patterns/single-responsibility-principle/
+5. http://joelabrahamsson.com/a-simple-example-of-the-openclosed-principle/
